@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <style>
-      h1 {text-align: center;}
-      body {text-align: center;}
+      h1 {
+        text-align: center;
+      }
+
+      body {
+        text-align: center;
+      }
     </style>
     <title>Van X Roppers Site</title>
   </head>
@@ -14,10 +19,17 @@
     <br>
     <p>Check out these links to learn how I got here!</p>
     <br>
-    <a href="https://www.roppers.org" target="_blank">Visit Roppers.org</a>
+    <a href="https://www.roppers.org" target="_blank">Roppers.org</a>
     <br>
     <a href="https://pages.github.com/" target="_blank">Github Pages</a>
     <br>
     <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools HTML primer</a>
+    <br>
+    <input id="testButton" type="button" value="Try Me!" />
+    <script>
+      document.getElementById("testButton").onclick = function() {
+        alert('Hello World!');
+      };
+    </script>
   </body>
 </html>

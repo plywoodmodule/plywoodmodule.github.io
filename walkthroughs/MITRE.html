@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MITRE — TryHackMe Walkthrough</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem auto;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #111;
+    }
+    img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    code, pre {
+      background: #f5f5f5;
+      border-radius: 4px;
+      padding: 0.5rem;
+      display: block;
+      overflow-x: auto;
+    }
+    h1, h2, h3 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3em;
+    }
+    a {
+      color: #0366d6;
+    }
+  </style>
+</head>
+<body>
+  <h1>MITRE — TryHackMe Walkthrough</h1>
+  <p><a href="../index.html">← Back to Home</a></p>
+
+  <h2>Overview</h2>
+  <p>Room: MITRE | Difficulty: Beginner | Techniques: T1046, T1059</p>
+
+  <h2>Recon</h2>
+  <pre><code>nmap -sC -sV -oN nmap.txt 10.10.x.x</code></pre>
+  <img src="../assets/mitre/01-nmap.png" alt="Nmap scan results" />
+
+  <h2>Foothold</h2>
+  <img src="../assets/mitre/02-shell.png" alt="Gaining initial shell" />
+  <p>Exploited CVE-XXXX to get user access.</p>
+
+  <h2>Privilege Escalation</h2>
+  <img src="../assets/mitre/03-root.png" alt="Privilege escalation" />
+  <p>Used service misconfiguration to escalate privileges.</p>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>Enumerate thoroughly before exploiting.</li>
+    <li>Map observed actions to MITRE ATT&CK techniques.</li>
+  </ul>
+
+</body>
+</html>
+
